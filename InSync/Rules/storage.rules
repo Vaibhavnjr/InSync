@@ -1,0 +1,31 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function pairDocument(pairCode) {
+      return firestore.get(/databases/(default)/documents/pairs/$(pairCode));
+    }
+
+    function isPairMember(pairCode) {
+      return signedIn()
+        && (
+          pairDocument(pairCode).data.userA == request.auth.uid
+          || pairDocument(pairCode).data.userB == request.auth.uid
+        );
+    }
+
+    match /drawings/{pairCode}/{userId}/latest.png {
+      allow read: if isPairMember(pairCode);
+
+      allow write: if isPairMember(pairCode)
+        && request.auth.uid == userId
+        && request.resource.size < 5 * 1024 * 1024
+        && request.resource.contentType == "image/png";
+    }
+  }
+}
+

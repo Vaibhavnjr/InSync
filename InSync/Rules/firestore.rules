@@ -1,0 +1,46 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isPairMember(pair) {
+      return signedIn()
+        && (pair.data.userA == request.auth.uid || pair.data.userB == request.auth.uid);
+    }
+
+    match /pairs/{pairCode} {
+      allow create: if signedIn()
+        && request.resource.data.pairCode == pairCode
+        && request.resource.data.createdBy == request.auth.uid
+        && request.resource.data.userA == request.auth.uid
+        && request.resource.data.userB == ""
+        && request.resource.data.status == "waiting";
+
+      allow read: if isPairMember(resource);
+
+      allow update: if signedIn() && (
+        (
+          resource.data.userB == ""
+          && request.resource.data.userA == resource.data.userA
+          && request.resource.data.userB == request.auth.uid
+          && request.resource.data.status == "connected"
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(["userB", "status"])
+        )
+        || (
+          resource.data.userA == request.auth.uid
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(["latestByUserA"])
+        )
+        || (
+          resource.data.userB == request.auth.uid
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(["latestByUserB"])
+        )
+      );
+
+      allow delete: if false;
+    }
+  }
+}
+

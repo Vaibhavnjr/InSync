@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00B000000000000000000001 /* InSyncApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A000000000000000000101 /* InSyncApp.swift */; };
+		00B000000000000000000002 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A000000000000000000102 /* AppState.swift */; };
+		00B000000000000000000003 /* DrawingMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A000000000000000000111 /* DrawingMetadata.swift */; };
+		00B000000000000000000004 /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A000000000000000000112 /* Pair.swift */; };
+		00B000000000000000000005 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A000000000000000000131 /* RootView.swift */; };
+		00B000000000000000000006 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A000000000000000000135 /* DrawingView.swift */; };
+		00B000000000000000000007 /* StatusTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A000000000000000000137 /* StatusTextView.swift */; };
+		00B000000000000000000008 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A000000000000000000138 /* ButtonStyles.swift */; };
+		00B000000000000000000009 /* Stroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A000000000000000000141 /* Stroke.swift */; };
+		00B000000000000000000010 /* DrawingTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A000000000000000000142 /* DrawingTool.swift */; };
+		00B000000000000000000011 /* DrawingCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A000000000000000000143 /* DrawingCanvasView.swift */; };
+		00B000000000000000000012 /* CanvasRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A000000000000000000144 /* CanvasRenderer.swift */; };
+		00B000000000000000000013 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A000000000000000000151 /* Constants.swift */; };
+		00B000000000000000000014 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A000000000000000000152 /* Color+Hex.swift */; };
+		00B000000000000000000015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A000000000000000000161 /* Assets.xcassets */; };
+		00B000000000000000000016 /* WidgetStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A000000000000000000121 /* WidgetStorageService.swift */; };
+		00B000000000000000000027 /* InSyncWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 00A000000000000000000005 /* InSyncWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		00B000000000000000000101 /* InSyncWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A000000000000000000201 /* InSyncWidget.swift */; };
+		00B000000000000000000102 /* InSyncWidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A000000000000000000202 /* InSyncWidgetEntry.swift */; };
+		00B000000000000000000103 /* InSyncWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A000000000000000000203 /* InSyncWidgetProvider.swift */; };
+		00B000000000000000000104 /* InSyncWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A000000000000000000204 /* InSyncWidgetView.swift */; };
+		00B000000000000000000105 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A000000000000000000151 /* Constants.swift */; };
+		00B000000000000000000106 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A000000000000000000152 /* Color+Hex.swift */; };
+		00B000000000000000000107 /* WidgetStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A000000000000000000121 /* WidgetStorageService.swift */; };
+		00B000000000000000000108 /* InSyncWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A000000000000000000207 /* InSyncWidgetBundle.swift */; };
+		00B000000000000000000109 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A000000000000000000208 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00C000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000000000000000000011;
+			remoteInfo = InSyncWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		00D000000000000000000001 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				00B000000000000000000027 /* InSyncWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00A000000000000000000004 /* InSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00A000000000000000000005 /* InSyncWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = InSyncWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		00A000000000000000000006 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		00A000000000000000000101 /* InSyncApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InSyncApp.swift; sourceTree = "<group>"; };
+		00A000000000000000000102 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		00A000000000000000000103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00A000000000000000000104 /* InSync.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InSync.entitlements; sourceTree = "<group>"; };
+		00A000000000000000000111 /* DrawingMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingMetadata.swift; sourceTree = "<group>"; };
+		00A000000000000000000112 /* Pair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
+		00A000000000000000000121 /* WidgetStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetStorageService.swift; sourceTree = "<group>"; };
+		00A000000000000000000131 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		00A000000000000000000135 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		00A000000000000000000137 /* StatusTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTextView.swift; sourceTree = "<group>"; };
+		00A000000000000000000138 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		00A000000000000000000141 /* Stroke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stroke.swift; sourceTree = "<group>"; };
+		00A000000000000000000142 /* DrawingTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingTool.swift; sourceTree = "<group>"; };
+		00A000000000000000000143 /* DrawingCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCanvasView.swift; sourceTree = "<group>"; };
+		00A000000000000000000144 /* CanvasRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasRenderer.swift; sourceTree = "<group>"; };
+		00A000000000000000000151 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		00A000000000000000000152 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		00A000000000000000000161 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00A000000000000000000201 /* InSyncWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InSyncWidget.swift; sourceTree = "<group>"; };
+		00A000000000000000000202 /* InSyncWidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InSyncWidgetEntry.swift; sourceTree = "<group>"; };
+		00A000000000000000000203 /* InSyncWidgetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InSyncWidgetProvider.swift; sourceTree = "<group>"; };
+		00A000000000000000000204 /* InSyncWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InSyncWidgetView.swift; sourceTree = "<group>"; };
+		00A000000000000000000205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00A000000000000000000206 /* InSyncWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InSyncWidgetExtension.entitlements; sourceTree = "<group>"; };
+		00A000000000000000000207 /* InSyncWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InSyncWidgetBundle.swift; sourceTree = "<group>"; };
+		00A000000000000000000208 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00D000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D000000000000000000102 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				00A000000000000000000006 /* README.md */,
+				000000000000000000000100 /* InSync */,
+				000000000000000000000200 /* InSyncWidgetExtension */,
+				000000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00A000000000000000000004 /* InSync.app */,
+				00A000000000000000000005 /* InSyncWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		000000000000000000000100 /* InSync */ = {
+			isa = PBXGroup;
+			children = (
+				00A000000000000000000101 /* InSyncApp.swift */,
+				00A000000000000000000102 /* AppState.swift */,
+				00A000000000000000000103 /* Info.plist */,
+				00A000000000000000000104 /* InSync.entitlements */,
+				000000000000000000000110 /* Models */,
+				000000000000000000000120 /* Services */,
+				000000000000000000000130 /* Views */,
+				000000000000000000000140 /* Drawing */,
+				000000000000000000000150 /* Shared */,
+				000000000000000000000160 /* Resources */,
+			);
+			path = InSync;
+			sourceTree = "<group>";
+		};
+		000000000000000000000110 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				00A000000000000000000111 /* DrawingMetadata.swift */,
+				00A000000000000000000112 /* Pair.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		000000000000000000000120 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				00A000000000000000000121 /* WidgetStorageService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		000000000000000000000130 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				00A000000000000000000131 /* RootView.swift */,
+				00A000000000000000000135 /* DrawingView.swift */,
+				00A000000000000000000137 /* StatusTextView.swift */,
+				00A000000000000000000138 /* ButtonStyles.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		000000000000000000000140 /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				00A000000000000000000141 /* Stroke.swift */,
+				00A000000000000000000142 /* DrawingTool.swift */,
+				00A000000000000000000143 /* DrawingCanvasView.swift */,
+				00A000000000000000000144 /* CanvasRenderer.swift */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
+		000000000000000000000150 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				00A000000000000000000151 /* Constants.swift */,
+				00A000000000000000000152 /* Color+Hex.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		000000000000000000000160 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				00A000000000000000000161 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		000000000000000000000200 /* InSyncWidgetExtension */ = {
+			isa = PBXGroup;
+			children = (
+				00A000000000000000000207 /* InSyncWidgetBundle.swift */,
+				00A000000000000000000201 /* InSyncWidget.swift */,
+				00A000000000000000000202 /* InSyncWidgetEntry.swift */,
+				00A000000000000000000203 /* InSyncWidgetProvider.swift */,
+				00A000000000000000000204 /* InSyncWidgetView.swift */,
+				00A000000000000000000205 /* Info.plist */,
+				00A000000000000000000206 /* InSyncWidgetExtension.entitlements */,
+				00A000000000000000000208 /* Assets.xcassets */,
+			);
+			path = InSyncWidgetExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000000000000000000000010 /* InSync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E000000000000000000010 /* Build configuration list for PBXNativeTarget "InSync" */;
+			buildPhases = (
+				00D000000000000000000010 /* Sources */,
+				00D000000000000000000002 /* Frameworks */,
+				00D000000000000000000020 /* Resources */,
+				00D000000000000000000001 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00C000000000000000000002 /* PBXTargetDependency */,
+			);
+			name = InSync;
+			packageProductDependencies = (
+			);
+			productName = InSync;
+			productReference = 00A000000000000000000004 /* InSync.app */;
+			productType = "com.apple.product-type.application";
+		};
+		000000000000000000000011 /* InSyncWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E000000000000000000110 /* Build configuration list for PBXNativeTarget "InSyncWidgetExtension" */;
+			buildPhases = (
+				00D000000000000000000110 /* Sources */,
+				00D000000000000000000102 /* Frameworks */,
+				00D000000000000000000120 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InSyncWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = InSyncWidgetExtension;
+			productReference = 00A000000000000000000005 /* InSyncWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					000000000000000000000010 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					000000000000000000000011 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 00E000000000000000000001 /* Build configuration list for PBXProject "InSync" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 000000000000000000000002;
+			packageReferences = (
+			);
+			productRefGroup = 000000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000000000000000000000010 /* InSync */,
+				000000000000000000000011 /* InSyncWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00D000000000000000000020 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00B000000000000000000015 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D000000000000000000120 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00B000000000000000000109 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00D000000000000000000010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00B000000000000000000001 /* InSyncApp.swift in Sources */,
+				00B000000000000000000002 /* AppState.swift in Sources */,
+				00B000000000000000000003 /* DrawingMetadata.swift in Sources */,
+				00B000000000000000000004 /* Pair.swift in Sources */,
+				00B000000000000000000005 /* RootView.swift in Sources */,
+				00B000000000000000000006 /* DrawingView.swift in Sources */,
+				00B000000000000000000007 /* StatusTextView.swift in Sources */,
+				00B000000000000000000008 /* ButtonStyles.swift in Sources */,
+				00B000000000000000000009 /* Stroke.swift in Sources */,
+				00B000000000000000000010 /* DrawingTool.swift in Sources */,
+				00B000000000000000000011 /* DrawingCanvasView.swift in Sources */,
+				00B000000000000000000012 /* CanvasRenderer.swift in Sources */,
+				00B000000000000000000013 /* Constants.swift in Sources */,
+				00B000000000000000000014 /* Color+Hex.swift in Sources */,
+				00B000000000000000000016 /* WidgetStorageService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D000000000000000000110 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00B000000000000000000108 /* InSyncWidgetBundle.swift in Sources */,
+				00B000000000000000000101 /* InSyncWidget.swift in Sources */,
+				00B000000000000000000102 /* InSyncWidgetEntry.swift in Sources */,
+				00B000000000000000000103 /* InSyncWidgetProvider.swift in Sources */,
+				00B000000000000000000104 /* InSyncWidgetView.swift in Sources */,
+				00B000000000000000000105 /* Constants.swift in Sources */,
+				00B000000000000000000106 /* Color+Hex.swift in Sources */,
+				00B000000000000000000107 /* WidgetStorageService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00C000000000000000000002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 000000000000000000000011 /* InSyncWidgetExtension */;
+			targetProxy = 00C000000000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00E000000000000000000002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_LANGUAGE = en;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00E000000000000000000003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_LANGUAGE = en;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		00E000000000000000000011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGNING_REQUIRED = YES;
+				CODE_SIGN_ENTITLEMENTS = InSync/InSync.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = 49W487ZZQ7;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = InSync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vaibhavpant.insync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		00E000000000000000000012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGNING_REQUIRED = YES;
+				CODE_SIGN_ENTITLEMENTS = InSync/InSync.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = 49W487ZZQ7;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = InSync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vaibhavpant.insync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		00E000000000000000000111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				AUTOMATION_APPLE_EVENTS = NO;
+				CODE_SIGNING_REQUIRED = YES;
+				CODE_SIGN_ENTITLEMENTS = InSyncWidgetExtension/InSyncWidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = 49W487ZZQ7;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = InSyncWidgetExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vaibhavpant.insync.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = NO;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		00E000000000000000000112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				AUTOMATION_APPLE_EVENTS = NO;
+				CODE_SIGNING_REQUIRED = YES;
+				CODE_SIGN_ENTITLEMENTS = InSyncWidgetExtension/InSyncWidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = 49W487ZZQ7;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = InSyncWidgetExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vaibhavpant.insync.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = NO;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E000000000000000000001 /* Build configuration list for PBXProject "InSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E000000000000000000002 /* Debug */,
+				00E000000000000000000003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00E000000000000000000010 /* Build configuration list for PBXNativeTarget "InSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E000000000000000000011 /* Debug */,
+				00E000000000000000000012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00E000000000000000000110 /* Build configuration list for PBXNativeTarget "InSyncWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E000000000000000000111 /* Debug */,
+				00E000000000000000000112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 000000000000000000000001 /* Project object */;
+}
