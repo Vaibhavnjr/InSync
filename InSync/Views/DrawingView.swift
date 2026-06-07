@@ -62,11 +62,10 @@ struct DrawingView: View {
         .padding(.horizontal, 10)
         .padding(.vertical, 8)
         .background(.white.opacity(0.96), in: RoundedRectangle(cornerRadius: 42, style: .continuous))
-        .shadow(color: .black.opacity(0.02), radius: 16.5, x: 0, y: -4)
-        .shadow(color: .black.opacity(0.03), radius: 6, x: 0, y: -1.46)
-        .shadow(color: .black.opacity(0.04), radius: 2.9, x: 0, y: -0.71)
-        .shadow(color: .black.opacity(0.05), radius: 1.4, x: 0, y: -0.35)
-        .shadow(color: .black.opacity(0.07), radius: 0.57, x: 0, y: -0.14)
+        .overlay(
+            RoundedRectangle(cornerRadius: 42, style: .continuous)
+                .stroke(Color(hex: "#D4D2D1").opacity(0.55), lineWidth: 1)
+        )
         .scaleEffect(scale, anchor: .topLeading)
         .frame(
             width: metricsToolbarReferenceWidth * scale,

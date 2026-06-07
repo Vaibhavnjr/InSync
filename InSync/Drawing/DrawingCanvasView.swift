@@ -37,9 +37,8 @@ struct DrawingCanvasView: View {
             .clipShape(RoundedRectangle(cornerRadius: 24, style: .continuous))
             .overlay(
                 RoundedRectangle(cornerRadius: 24, style: .continuous)
-                    .stroke(Color.black.opacity(0.08), lineWidth: 1)
+                    .stroke(Color(hex: "#D4D2D1").opacity(0.55), lineWidth: 1)
             )
-            .shadow(color: .black.opacity(0.08), radius: 16, x: 0, y: 8)
             .gesture(
                 DragGesture(minimumDistance: 0, coordinateSpace: .local)
                     .onChanged { value in
